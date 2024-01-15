@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 14px;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 600px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product-box__image {
+  height: 40%;
+  width: 100%;
+  background-image: url("../images/image-product-mobile.jpg");
+  background-size: cover;
+}
+.product-box__content {
+  padding: 25px;
+}
+.product-box__type {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 48%);
+}
+.product-box__name {
+  margin: 15px 0;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+.product-box__text {
+  color: hsl(228, 12%, 48%);
+  margin: 15px 0;
+}
+.product-box__prices {
+  font-family: "Fraunces", serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.product-box__prices--new {
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+  font-size: 32px;
+  margin-right: 20px;
+}
+.product-box__prices--old {
+  font-family: "Fraunces", serif;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.product-box__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 8px;
+  margin: 15px 0;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.product-box__button--text {
+  margin-left: 10px;
+  color: white;
+  font-weight: 700;
+}
+.product-box__button:hover {
+  background-color: hsl(158, 35%, 23%);
+}
+
+@media (min-width: 1440px) {
+  .product-box {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 400px;
+  }
+  .product-box__image {
+    height: 100%;
+    width: 50%;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+  }
+  .product-box__content {
+    width: 50%;
+    height: 100%;
+    display: inline;
+    padding: 30px;
+  }
+  .product-box__name {
+    font-size: 38px;
+    line-height: 32px;
+  }
+  .product-box__text {
+    margin: 20px 0;
+  }
+}/*# sourceMappingURL=main.css.map */
